@@ -1,6 +1,12 @@
 Descriere scripturi
 
-Pentru a iesi un rezultat bun acestea se folosesc in ordinea in care au fost descrise mai jos
+Pentru a iesi un rezultat bun acestea se folosesc in ordinea in care a fost descrisa mai jos:
+
+Webscraper pt membrii grupului
+modifyNmaeHref_about_fromFb.py pt a scoate hreful corect cu "/about",
+Se ia toata lista din output si se pune in sitemapul de webscraper intre [] de la startUrl
+merge.py pentru a uni datele din members cu cele din about
+scrapeForLinkedIn.py pentru output final
 
 modifyNameHref_about_fromFb.py
 	- modifica name-reful din fisier pregatind-ul pentru LinkedIn search
