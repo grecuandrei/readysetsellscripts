@@ -81,10 +81,10 @@ def chainCall(file1):
 
     df = pd.read_csv(file1)
     for index, row in df.iterrows():
-        if row[11] != ' ' and row[13] == ' ':
-            print("-----------------------------" + row[11])
+        if row[0] != ' ':
+            print("-----------------------------" + row[0])
             time.sleep(random.choice(delays))
-            web = googleSearch(row[11], index % 3)
+            web = googleSearch(row[0], index % 3)
             companyWeb = ' , '.join(web)
             print(companyWeb)
             df.at[index, 'CompanyWebsite'] = companyWeb
